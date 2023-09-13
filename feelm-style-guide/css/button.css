@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* common */
+.btn{
+    position: relative; 
+    display: inline-block; *display: inline; *zoom: 1; 
+    min-width: 80px; 
+    height: 40px; line-height: 40px; 
+    padding: 0 15px; border: none; border-radius: 100px; 
+    font-family: 'Roboto', san-serif; font-weight: 400; font-size: 16px; 
+    text-align: center; text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+    margin: 10px;
+}
+.btn * {vertical-align: middle;}
+.btn:active { transform: scale(0.98);}
+
+.btn.large{
+    min-width: 250px;
+    height: 45px;
+    line-height: 45px;
+}
+.btn.small{
+    min-width: auto;
+    height: auto;
+    padding: 5px 10px;
+    line-height: 1em;
+    font-size: 11px;
+}
+
+/* btn blue */
+.btn_blue{
+    color: #fff;
+    background: rgba(67, 97, 255, 1); 
+    box-shadow: inset 0 3px 5px rgba(135, 155, 255, 0.4), 
+                inset 0 -3px 5px rgba(3, 59, 181, 0.4); 
+}
+.btn_blue:hover{ 
+    color: #fff;
+    background: rgb(23, 56, 223); 
+}
+.btn_blue:active{
+    box-shadow: inset 0 4px 5px rgba(1, 49, 154, 0.541), 
+                inset 0 -2px 5px rgba(190, 201, 255, 0.277);
+}
+
+/* blue 다른 컬러 */
+.btn_blue.sky{
+    color: #222;
+    background: rgb(133, 163, 255); 
+    box-shadow: inset 0 3px 5px rgba(159, 183, 255, 1), 
+                inset 0 -3px 5px rgba(86, 131, 255, 0.4); 
+}
+.btn_blue.sky:hover{
+    color: #fff;
+    background: rgb(107, 133, 255);
+}
+.btn_blue.sky:active{
+    background: rgb(103, 143, 255); 
+    box-shadow: inset 0 -2px 5px rgba(159, 183, 255, 1), 
+                inset 0 4px 5px rgba(86, 131, 255, 0.4); 
+}
+.btn_blue.mid{
+    color: #fff;
+    background: rgb(107, 133, 255);
+    box-shadow: inset 0 3px 5px rgba(135, 155, 255, 0.4), 
+                inset 0 -3px 5px rgba(3, 59, 181, 0.4); 
+}
+.btn_blue.mid:hover{ 
+    background: rgba(67, 97, 255, 1); 
+}
+.btn_blue.mid:active{
+    box-shadow: inset 0 4px 5px rgba(3, 59, 181, 0.4),
+                inset 0 -2px 5px rgba(135, 155, 255, 0.4); 
+}
+
+
+/* btn outline */
+.btn_outline{
+    box-shadow: inset 0 0 0 2px rgba(67, 97, 255, 1); 
+}
+.btn_outline:hover{
+    color: #fff;
+    background: rgba(67, 97, 255, 1); 
+    box-shadow: inset 0 3px 5px rgba(135, 155, 255, 0.4), 
+                inset 0 -3px 5px rgba(3, 59, 181, 0.4); 
+}
+.btn_outline:active{
+    color: #fff;
+    box-shadow: inset 0 4px 5px rgba(1, 49, 154, 0.541), 
+                inset 0 -2px 5px rgba(190, 201, 255, 0.277);
+}
+
+/* btn warning */
+.btn_warning{
+    box-shadow: inset 0 0 0 2px #ccc;
+}
+.btn_warning:hover{
+    box-shadow: inset 0 0 0 2px rgb(236, 199, 15); 
+}
+
+/* btn disabled */
+.btn_disabled{
+    background: #ddd;
+    color: #999 !important;
+    cursor: no-drop;
+}
+.btn_disabled img{ opacity: 0.25; }
+.btn_disabled:active {transform:scale(1.0)}
+
+/* btn ico */
+.btn.ico_l{ text-align: right; display: inline-flex; align-items: center; }
+.btn.ico_l img, .btn.ico_l i{ margin-right: 7px; }
+
+.btn.ico_r{ text-align: left; display: inline-flex; align-items: center; }
+.btn.ico_r img, .btn.ico_r i{ margin-left: 7px; }
+
+/* icon이 img일 때 */
+.btn img{ position: relative; height: calc(100% - 20px); }
+
+.btn.ico_o{ min-width: 10px; }
+.btn.ico_o img{ position: absolute; top: 10px !important; left: 10px; }
+
+.btn_blue img, .btn_outline:hover img{ filter: invert(1); transition: filter 0.15s ease-in-out; }
+.btn:hover img, .btn:active img{ top: -0.4px; }
+
+/* icon이 i일 때 */
+.btn i{font-size: 20px;}
+
+.btn.ico_o i{ position: absolute; top: 10px !important; left: 0; width: 40px; text-align: center;}
+
+.btn.btn_done {color: #fff; background: rgb(236, 199, 15); 
+    box-shadow: inset 0 3px 5px rgba(255, 223, 63, 0.4), 
+                inset 0 -3px 5px rgba(213, 179, 9, 0.4);  }

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&&family=Noto+Sans+KR&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body{background: #fff; }
+input, select, textcon, option {font-family: 'Roboto', sans-serif; }
+#wrap {padding: 40px 100px 200px; width: 1000px; margin: 0 auto;}
+*{margin: 0px; padding: 0px;}
+a, a:hover, a:active, a:visited {color: #000; text-decoration: none;}
+
+.sections{padding-top: 100px; }
+
+h1,h2,h3,h4{ position: relative; font-family: 'Roboto', sans-serif; font-weight: 400; color: #111;}
+h1{ font-size: 50px; font-weight: 700; margin-bottom: 30px; }
+h2{ font-size: 36px; }
+h3{ font-size: 18px; color: #111; padding-top: 80px; text-transform: uppercase;}
+h4 {font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 20px; margin-top: 40px;}
+
+hr{margin: 30px 0;}
+
+#header {position: fixed; z-index: 999; top: 0; left: 0; width: 100%; height: 80px; background: #222; }
+#header img {height: 20px; display: inline-block; margin: 0 20px 0 100px; margin-bottom: -2px;}
+#header span {margin-right: 20px;}
+#header h2 {color: #eee; display: inline-block; padding: 0; font-size: 16px; margin-top: 32px;}
+
+#color .img_con {display: inline-flex; width: 100%; justify-content: center;}
+#color .img_con > div {width: 33%; text-align: center;}
+#color .img_con img, #bi .img_con img {margin: 10px 0;}
+#color .img_con h2 {font-size: 26px; font-weight: 500;}
+#color .img_con h3, #bi .img_con h3 {padding: 0; text-transform: lowercase; text-align: center;}
+
+#font .title_con {margin-bottom: 60px;}
+
+#font .title_con, #font .sub_con {display: inline-flex; width: 100%; align-items: center;}
+#font .title_con .left_con, #font .sub_con .left_con {width: 300px;}
+#font .sub_con .left_con {margin-left: 27px;}
+
+#font .title_con .right_con p, #font .sub_con .right_con p {text-align: left; font-size: 32px;}
+#font .title_con p {font-family: 'Chivo', sans-serif; font-weight: 700; font-size: 35px; text-align: center;}
+#font .sub_con p {font-family: 'Roboto', sans-serif; font-weight: 400; text-align: center;}
+
+#font .title_con .left_con p:nth-child(1),
+#font .sub_con .left_con p:nth-child(1) {color: #819fff; font-size: 24px; margin-bottom: 10px;}
+#font .title_con .left_con p:nth-child(2),
+#font .sub_con .left_con p:nth-child(2) {font-size: 48px; margin-bottom: 10px}
+#font .sub_con .left_con p:nth-child(3) {font-size: 20px;}
+#font .sub_con .left_con p:nth-child(4) {font-size: 14px;}
+
+#font .title_con .right_con {width: calc(100% - 300px);}
+#font .right_con * {margin-left: 30px;}
+
+#bi .img_con {width: 100%; display: inline-flex; justify-content: space-evenly;}
+#bi .img_con > div {width: 35%;}
+#bi .img_con p {text-align: center;}
+#bi h3 {padding-top: 50px; }
+
+#btn_set .basic h3 {padding-top: 40px;}
+#btn_set .ico_o .icon_con {display: inline-flex; flex-direction: row; width: 100%; flex-wrap: wrap;}
+#btn_set .ico_o .icon_con > div {width: 50%;}
+
+#btn_set .ico_o .fal.fa-play {margin-left: 2px;}
+#btn_set .ico_o .fal.fa-comment, #btn_set .ico_o .far.fa-chevron-right {margin-left: 1px;}
+#btn_set .ico_o .far.fa-chevron-left {margin-right: 1px;}
